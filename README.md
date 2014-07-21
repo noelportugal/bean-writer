@@ -1,7 +1,7 @@
-bean-write-characteristics
+bean-writer
 ==========================
 
-An example on how to write to LightBlue Bean Services and Characteristics. Using noble
+An example on how to write to LightBlue Bean Services and Characteristics. Using Node.js and noble
 
 
 Install
