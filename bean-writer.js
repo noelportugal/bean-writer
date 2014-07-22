@@ -120,6 +120,8 @@ function getBuffer(cmdBuffer,payloadBuffer){
     //swap 2 crc bytes and add to end of gatt
     gattBuffer[gattBuffer.length-2]=crc16Buffer[1];
     gattBuffer[gattBuffer.length-1]=crc16Buffer[0];
+    
+    console.log(gattBuffer);
 
     return gattBuffer;
 }
