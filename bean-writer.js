@@ -54,7 +54,7 @@ noble.startScanning([], true);
 noble.on('discover', function(peripheral) {
     console.log(peripheral.uuid + ' ' + peripheral.advertisement.localName + ' ' + peripheral.rssi);
     if (peripheral.uuid === uuid && peripheral.rssi > rrsiThreshold && state !== 'writing' && zone === 'outside'){  
-        //zone = 'inside'; //coming this for debuging. It will always trigger the proximity threshold
+        //zone = 'inside'; //comment this for debuging. It will always trigger the proximity threshold
         noble.stopScanning();
 
         // Write to Bean Serial Characteritic to change on-board LED
